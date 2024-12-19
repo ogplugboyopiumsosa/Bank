@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\opium\\Desktop\\Bank\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3AA82E22-6B12-43E2-AFAC-11C77E89A0F0}|WpfApp1\\WpfApp1.csproj|c:\\users\\opium\\desktop\\bank\\wpfapp1\\classes\\bankaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3AA82E22-6B12-43E2-AFAC-11C77E89A0F0}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\classes\\bankaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3AA82E22-6B12-43E2-AFAC-11C77E89A0F0}|WpfApp1\\WpfApp1.csproj|C:\\Users\\opium\\Desktop\\Bank\\wpfapp1\\classes\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3AA82E22-6B12-43E2-AFAC-11C77E89A0F0}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\classes\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3AA82E22-6B12-43E2-AFAC-11C77E89A0F0}|WpfApp1\\WpfApp1.csproj|C:\\Users\\opium\\Desktop\\Bank\\wpfapp1\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{3AA82E22-6B12-43E2-AFAC-11C77E89A0F0}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3AA82E22-6B12-43E2-AFAC-11C77E89A0F0}|WpfApp1\\WpfApp1.csproj|C:\\Users\\opium\\Desktop\\Bank\\wpfapp1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3AA82E22-6B12-43E2-AFAC-11C77E89A0F0}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AA82E22-6B12-43E2-AFAC-11C77E89A0F0}|WpfApp1\\WpfApp1.csproj|c:\\users\\opium\\desktop\\bank\\wpfapp1\\classes\\bankaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AA82E22-6B12-43E2-AFAC-11C77E89A0F0}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\classes\\bankaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AA82E22-6B12-43E2-AFAC-11C77E89A0F0}|WpfApp1\\WpfApp1.csproj|C:\\Users\\opium\\Desktop\\Bank\\wpfapp1\\classes\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AA82E22-6B12-43E2-AFAC-11C77E89A0F0}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\classes\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,17 +26,31 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Users\\opium\\Desktop\\Bank\\WpfApp1\\Classes\\Client.cs",
+              "RelativeDocumentMoniker": "WpfApp1\\Classes\\Client.cs",
+              "ToolTip": "C:\\Users\\opium\\Desktop\\Bank\\WpfApp1\\Classes\\Client.cs",
+              "RelativeToolTip": "WpfApp1\\Classes\\Client.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T21:15:13.469Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "BankAccount.cs",
               "DocumentMoniker": "C:\\Users\\opium\\Desktop\\Bank\\WpfApp1\\Classes\\BankAccount.cs",
               "RelativeDocumentMoniker": "WpfApp1\\Classes\\BankAccount.cs",
               "ToolTip": "C:\\Users\\opium\\Desktop\\Bank\\WpfApp1\\Classes\\BankAccount.cs",
               "RelativeToolTip": "WpfApp1\\Classes\\BankAccount.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAUAAAA",
+              "ViewState": "AQIAADsAAAAAAAAAAAAswFgAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-28T21:15:12.956Z",
               "EditorCaption": ""
@@ -44,19 +58,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Client.cs",
-              "DocumentMoniker": "C:\\Users\\opium\\Desktop\\Bank\\WpfApp1\\Classes\\Client.cs",
-              "RelativeDocumentMoniker": "WpfApp1\\Classes\\Client.cs",
-              "ToolTip": "C:\\Users\\opium\\Desktop\\Bank\\WpfApp1\\Classes\\Client.cs",
-              "RelativeToolTip": "WpfApp1\\Classes\\Client.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAgAAAA",
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\opium\\Desktop\\Bank\\WpfApp1\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp1\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\opium\\Desktop\\Bank\\WpfApp1\\MainWindow.xaml.cs",
+              "RelativeToolTip": "WpfApp1\\MainWindow.xaml.cs",
+              "ViewState": "AQIAALsAAAAAAAAAAAAmwMYAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T21:15:13.469Z",
+              "WhenOpened": "2024-11-28T21:15:13.476Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\opium\\Desktop\\Bank\\WpfApp1\\MainWindow.xaml",
               "RelativeDocumentMoniker": "WpfApp1\\MainWindow.xaml",
@@ -64,19 +78,6 @@
               "RelativeToolTip": "WpfApp1\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-11-28T21:15:13.475Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\opium\\Desktop\\Bank\\WpfApp1\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "WpfApp1\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\opium\\Desktop\\Bank\\WpfApp1\\MainWindow.xaml.cs",
-              "RelativeToolTip": "WpfApp1\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T21:15:13.476Z",
               "EditorCaption": ""
             }
           ]

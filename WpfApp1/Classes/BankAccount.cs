@@ -9,12 +9,13 @@ namespace WpfApp1.Classes
 {
     internal class BankAccount
     {
-        public int AccountNumber { get; set; }
-        public DateTime OpeningDate { get; set; }
-        public Client Owner { get; set; }
-        public decimal Balance { get; private set; }
-        public int DepositTermDays { get; private set; }
+        public int AccountNumber { get; set; } // НОМЕР СЧЕТА
+        public DateTime OpeningDate { get; set; } // ДАТА ОТКРЫТИЯ СЧЕТА
+        public Client Owner { get; set; } // ИНФО О КЛИЕНТЕ
+        public decimal Balance { get; private set; } // БАЛАНС СЧЕТА
+        public int DepositTermDays { get; private set; } // СРОК ВКЛАДА
         public string Status { get; private set; } // Открыт, Закрыт, Банкрот
+
 
         public BankAccount(int accountNumber, Client owner, decimal initialBalance, int depositTermDays)
         {
@@ -24,33 +25,38 @@ namespace WpfApp1.Classes
             DepositTermDays = depositTermDays;
             OpeningDate = DateTime.Now;
             Status = "Открыт";
+            UpdateStatus();
         }
 
-        //Пополнение
+        // Пополнение счета
         public void Deposit(decimal amount)
         {
             if (amount <= 0) throw new ArgumentException("Сумма должна быть положительной.");
             Balance += amount;
-            DepositEndDate();
+            UpdateStatus();
         }
 
         // Снятие со счета
-        public void Withdraw(decimal amount)
+        public bool Withdraw(decimal amount)
         {
-            if (amount > Balance) throw new InvalidOperationException("Недостаточно средств.");
+            if (amount > Balance) return false; // Проверка средст на счете
             if (Status != "Открыт") throw new InvalidOperationException("Счет не открыт для операций");
             Balance -= amount;
+            UpdateStatus();
             DepositEndDate();
+            return true;
         }
-
+        
+        // Вычисление даты окончание вклада
         private DateTime DepositEndDate()
         {
             return OpeningDate.AddDays(DepositTermDays);
         }
 
+        // Изменение статуса вклада
         public void UpdateStatus()
         {
-            if (Balance < 0)
+            if (Balance <= 0)
             {
                 Status = "Банкрот";
             }
@@ -65,7 +71,7 @@ namespace WpfApp1.Classes
             
         }
 
-        // Метод перевода на другой счет
+        // Перевод
         public void Transfer(BankAccount targetAccount, decimal amount)
         {
             if (amount > 0 && Balance >= amount)
@@ -79,5 +85,18 @@ namespace WpfApp1.Classes
                 Console.WriteLine("Недостаточно средств для перевода.");
             }
         }
+
+        // Возвращает строку с полной информацией о счете
+        public string GetAccountInfo()
+        {
+            UpdateStatus();
+            return $"Номер счета: {AccountNumber}\n" +
+                   $"Дата открытия: {OpeningDate:dd.MM.yyyy}\n" +
+                   $"Владелец: {Owner.GetClientInfo()}\n" +
+                   $"Баланс: {Balance} руб.\n" +
+                   $"Статус: {Status}\n" +
+                   $"Дата окончания вклада: {DepositEndDate():dd.MM.yyyy}";
+        }
+
     }
 }

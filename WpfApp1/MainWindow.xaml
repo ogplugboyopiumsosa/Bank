@@ -3,10 +3,42 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Банк" Height="700" Width="800">
     <Grid>
+        <Image Source="C:\Users\opium\Desktop\Bank\WpfApp1\image\1679006871_bogatyr-club-p-zelenii-fon-muzhskoi-foni-vkontakte-1.jpg" Stretch="Fill" Panel.ZIndex="0" />
+
+        <TextBlock Text="Данные для заполнения" VerticalAlignment="Top" Margin="8,15,0,0" HorizontalAlignment="Left" FontFamily="Bahnschrift" FontSize="13" />
         
+        <TextBlock Text="Выберите клиента:" VerticalAlignment="Top" Margin="8,50,0,0" HorizontalAlignment="Left" FontSize="13" FontFamily="Bahnschrift" />
+        <ComboBox x:Name="cblistClients" Width="200" Height="25" Margin="125,44,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" SelectionChanged="ListClient_Changed" />
+
+        <TextBlock Text="Номер счета:" VerticalAlignment="Top" Margin="8,89,0,0" HorizontalAlignment="Left" FontSize="13" FontFamily="Bahnschrift" />
+        <TextBox x:Name="tbaccountNumber" Width="200" Height="25" Margin="125,84,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+
+        <TextBlock Text="Имя владельца:" VerticalAlignment="Top" Margin="9,129,0,0" HorizontalAlignment="Left" FontFamily="Bahnschrift" FontSize="13" />
+        <TextBox x:Name="tbownerName" Width="200" Height="25" Margin="125,124,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+
+        <TextBlock Text="Номер паспорта:" VerticalAlignment="Top" Margin="8,169,0,0" HorizontalAlignment="Left" FontFamily="Bahnschrift" FontSize="13" />
+        <TextBox x:Name="tbpassportNumber" Width="200" Height="25" Margin="125,164,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+
+        <TextBlock Text="Дата рождения:" VerticalAlignment="Top" Margin="9,209,0,0" HorizontalAlignment="Left" FontFamily="Bahnschrift" FontSize="13" />
+        <DatePicker x:Name="dpdateOfBirth" Width="200" Height="25" Margin="125,204,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="13"   />
+
+        <TextBlock Text="Баланс:" VerticalAlignment="Top" Margin="8,249,0,0" HorizontalAlignment="Left" FontFamily="Bahnschrift" FontSize="13" />
+        <TextBox x:Name="tbbalance" Width="200" Height="25" Margin="125,244,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+
+        <TextBlock Text="Срок вклада (дни):" VerticalAlignment="Top" Margin="8,289,0,0" HorizontalAlignment="Left" FontFamily="Bahnschrift" FontSize="13" />
+        <TextBox x:Name="tbdepositTermDays" Width="200" Height="25" Margin="125,284,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+
+        <Button Content="Создать счет" Width="120" Height="30" Margin="10,543,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Click="CreateAccount_Click" FontFamily="Bahnschrift" FontSize="13" />
+        <Button Content="Пополнить" Width="120" Height="30" Margin="135,543,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Click="Deposit_Click" FontFamily="Bahnschrift" FontSize="13" />
+        <Button Content="Снять" Width="120" Height="30" Margin="10,583,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Click="Withdraw_Click" FontFamily="Bahnschrift" FontSize="13" />
+        <Button Content="Перевести" Width="120" Height="30" Margin="135,583,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Click="Transfer_Click" FontFamily="Bahnschrift" FontSize="13" />
+
+        <TextBlock Text="Информация о счете:" VerticalAlignment="Top" Margin="363,15,0,0" HorizontalAlignment="Left" FontFamily="Bahnschrift" FontSize="13" />
+        <TextBox x:Name="tblistInfo" Width="391" Height="568" Margin="363,45,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" IsReadOnly="True" />
     </Grid>
 </Window>
